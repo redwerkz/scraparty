@@ -1,10 +1,12 @@
 
 tasks:
   - init: |
-      go get github.com/spf13/cobra/cobra
-      go build
-    command: |
-      ./mycli --help
+      go get github.com/gocolly/colly/v2
+      go get github.com/gocolly/colly/v2/queue
+      go get github.com/kyokomi/emoji/v2
+      go get github.com/mozillazg/go-unidecode
+      go mod download go.uber.org/zap
+
 vscode:
   extensions:
     - golang.go
